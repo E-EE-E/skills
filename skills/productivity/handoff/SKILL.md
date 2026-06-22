@@ -2,6 +2,7 @@
 name: handoff
 description: Compact the current conversation into a handoff document for another agent to pick up.
 argument-hint: "What will the next session be used for?"
+disable-model-invocation: true
 ---
 
 Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to `docs/handoff/` in the project root (the current workspace). Create the directory if it doesn't exist. Use a filename like `handoff-YYYY-MM-DD-<topic>.md`. Overwrite previous handoff for the same topic when updating across multiple responses.
